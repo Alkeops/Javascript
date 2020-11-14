@@ -6,7 +6,7 @@ Los terminos de complejidad mas utilizados son:
 
 * **O(1)** ------ *Constante*
 * **O(n)** ------  *Lineal*
-* **O(n^2)** ----  *Cuadrática*
+* **O(n²)** ----  *Cuadrática*
 
 <br>
 
@@ -55,7 +55,7 @@ En este caso en particular podria ser optimizado, pero aun asi un código que se
 
 <br>
 
-## **O(n^2)** Complejidad Cuadrática
+## **O(n²)** Complejidad Cuadrática
 
 Sucede cuando el rendimiento es directamente proporcional al cuadrado del tamaño de el valor de entrada. Se da normalmente en bucles anidados y habiendo otras soluciones posibles es mejor evitarlas.
 
@@ -77,6 +77,6 @@ combinaciones(2) <i>//Mostraria en consola:
                  // 2 2 </i>
 </pre>
 
-En este caso se puede ver claramente, el valor de entrada es 2 y las iteracciones necesarias son 2^2= 4; Mas adelante se ven ejemplos más claros de un codigo parecido y como optimizarlo.
+En este caso se puede ver claramente, el valor de entrada es 2 y las iteracciones necesarias son 2²= 4; Mas adelante se ven ejemplos más claros de un codigo parecido y como optimizarlo.
 
 > Mas adelante actualizare más terminos de complejidad
