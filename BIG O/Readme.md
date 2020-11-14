@@ -70,11 +70,13 @@ const combinaciones = (n) => {
     }
 }
 
-combinaciones(2) <i> //Mostraria en consola:
-                        1 1
-                        1 2
-                        2 1
-                        2 2 </i>
+combinaciones(2) <i>//Mostraria en consola:
+                 // 1 1
+                 // 1 2
+                 // 2 1
+                 // 2 2 </i>
 </pre>
 
 En este caso se puede ver claramente, el valor de entrada es 2 y las iteracciones necesarias son 2^2= 4; Mas adelante se ven ejemplos más claros de un codigo parecido y como optimizarlo.
+
+> Mas adelante actualizare más terminos de complejidad
