@@ -62,3 +62,29 @@ tieneElCuadrado = compararArray2([1,2,3,2], [9,1,4,4])
 console.log(tieneElCuadrado);
 tieneElCuadrado = compararArray2([2,7,5,2,3,2], [9,49,4,25,4,4])
 console.log(tieneElCuadrado);
+
+
+//Ejercicio propuesto para saber si el str2 es un anagrama del str
+function validAnagram(str, str2){
+    if(str.length !== str2.length) return false;
+    let contadorDeFrecuencia = {};
+    for(let letra of str) contadorDeFrecuencia[letra] ? contadorDeFrecuencia[letra] +=1 : contadorDeFrecuencia[letra] = 1; //Se suman las veces que aparece una letra
+    for(let letra of str2){ 
+        if(!contadorDeFrecuencia[letra]) return false /* Se restan las veces que aparece una letra
+        si son más o menos no se cumple la tarea y retorna false*/
+        contadorDeFrecuencia[letra] -= 1;
+    }
+    return true
+  }
+
+
+  console.log("------------------")
+  console.log(validAnagram("", "")," true")
+  console.log(validAnagram("aaz", "zza")," false")
+  console.log(validAnagram("anagram", "nagaram"), " true")
+  console.log(validAnagram("rat", "car")," false")
+  console.log(validAnagram("awesome", "awesom")," false")
+  console.log(validAnagram("qwerty", "qeywrt")," true")
+  console.log(validAnagram("texttwisttime", "timetwisttext")," true")
+
+//Trabajar con objetos es conmunmente mas rapido que con arrays

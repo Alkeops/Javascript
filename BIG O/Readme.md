@@ -1,3 +1,4 @@
+> Algunos ejemplos estan basados en el curso dado por Colt Steele, se tradujeron algunas partes y se añadio comentarios para hacer mas facil la comprensión.   
 # BIG O NOTATION
 
 Nos permite determinar el nivel de complejidad de un algoritmo midiendo su rendimiento en cuanto a espacio, recursos, tiempo de ejecución, etc.
