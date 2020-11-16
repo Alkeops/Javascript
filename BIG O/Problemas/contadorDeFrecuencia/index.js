@@ -7,7 +7,8 @@ const compararArray = (arr1, arr2) => {
         arr2.splice(existeCuadrado, 1)
         return true
     }
-    //Lo que hace es buscar en el segundo array el indice de un elemento que sea el cuadrado del elemento del primer array y si existe elimina ese elemento del segundo array para continuar con la iteración.
+    /* Lo que hace es buscar en el segundo array el indice de un elemento que sea el cuadrado del elemento del primer array
+    y si existe elimina ese elemento del segundo array para continuar con la iteración. */
 } //Este algoritmo es O(n²).
 
 let tieneElCuadrado = compararArray([1,2,3], [4,1,9])
