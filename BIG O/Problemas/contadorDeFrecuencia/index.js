@@ -36,8 +36,14 @@ const compararArray2 = (arr1, arr2) => {
         if(contadorDeFrecuencia2[llave ** 2] !== contadorDeFrecuencia1[llave]) return false; //Si el valor dentro de la llave al cuadrado dentro del segundo contador no existe la misma cantidad de veces en el primer contador
     }
     return true
-}  //Este ejemplo más largo en apariencia es más eficiente, son tres bucles pero SEPARADOS haciendo que la complejidad sea O(3n) que para fines practicos se simplifica en O(n). Notese simplemente la diferencia en el siguiente dato, supongamos que cada array tiene 1000 elementos, en este caso (compararArray2), el total de las iteraciones(dado por los 3 bucles) seria de 1000*3  = 3000, en cambio en el caso anterior (compararArray1), al ser un bucle y dentro la operación indexOf(que por si sola es O(n) al tener que buscar elemento por elemento) el total de operaciones en el peor de los casos seria de 1000 (por el for), 1000(por el IndexOf) entonces 1000*1000 = 1,000,000!!!. Efectivamente, a pequeña escala, uno no podria notar la diferencia pero al ir aumentando la cantidad de datos la diferencia es abismal, en este caso la diferencia es de solo 997,000 operaciones. ¿Pensabas que lo importante es llegar al mismo resultado sin importar como?
-
+}  /*Este ejemplo más largo en apariencia es más eficiente, son tres bucles pero SEPARADOS haciendo que la complejidad sea 
+O(3n) que para fines practicos se simplifica en O(n). Notese simplemente la diferencia en el siguiente dato, supongamos 
+que cada array tiene 1000 elementos, en este caso (compararArray2), el total de las iteraciones(dado por los 3 bucles) 
+seria de 1000*3  = 3000, en cambio en el caso anterior (compararArray1), al ser un bucle y dentro la operación indexOf(que 
+por si sola es O(n) al tener que buscar elemento por elemento) el total de operaciones en el peor de los casos seria de
+1000 (por el for), 1000(por el IndexOf) entonces 1000*1000 = 1,000,000!!!. Efectivamente, a pequeña escala, uno no podria
+notar la diferencia pero al ir aumentando la cantidad de datos la diferencia es abismal, en este caso la diferencia es de 
+solo 997,000 operaciones. ¿Pensabas que lo importante es llegar al mismo resultado sin importar como?*/
 
 console.log("--------------------------")
 tieneElCuadrado = compararArray2([1,2,3], [4,1,9])
